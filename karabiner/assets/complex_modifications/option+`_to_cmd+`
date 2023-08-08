@@ -1,0 +1,30 @@
+{
+    "title": "option+`_to_cmd+`",
+    "rules": [
+        {
+            "description": "option+`_to_cmd+`",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "grave_accent_and_tilde",
+                        "modifiers": {
+                            "mandatory": [
+                                "option"
+                            ],
+                            "optional": [
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "grave_accent_and_tilde",
+                            "modifiers": "command"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

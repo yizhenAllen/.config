@@ -1,0 +1,55 @@
+{
+    "title": "cmd + 3 to cmd + h (hide a window)",
+    "rules": [
+        {
+            "description": "cmd + 2 to cmd + w (close a window)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "2",
+                        "modifiers": {
+                            "mandatory": [
+                                "command"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "w",
+                            "modifiers": "command"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "cmd + w to cmd + h (hide a window)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "mandatory": [
+                                "command"
+                            ],
+                            "optional": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "h",
+                            "modifiers": "command"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
