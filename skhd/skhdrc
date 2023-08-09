@@ -1,0 +1,39 @@
+# changing window focus
+
+# change window focus within space 
+cmd + ctrl - j : /opt/homebrew/bin/yabai -m window --focus south
+cmd + ctrl - k : /opt/homebrew/bin/yabai -m window --focus north
+cmd + ctrl - h : /opt/homebrew/bin/yabai -m window --focus west
+cmd + ctrl - l : /opt/homebrew/bin/yabai -m window --focus east
+
+# most important
+cmd + ctrl - e: yabai -m window --toggle zoom-fullscreen
+cmd + ctrl - m: yabai -m window --toggle zoom-fullscreen
+
+# balance windows autometically
+cmd + ctrl - b : yabai -m space --balance
+
+# emergency using
+cmd + ctrl - n : yabai -m window --toggle float
+
+# flip along y-axis
+cmd + ctrl - y : yabai -m space --mirror x-axis
+
+# flip along x-axis
+cmd + ctrl - x : yabai -m space --mirror y-axis
+
+# rotate layout
+cmd + ctrl - r : yabai -m space --rotate 270
+
+# swap to east 
+cmd + ctrl - i : yabai -m window --swap east
+
+# swap to west 
+cmd + ctrl - u : yabai -m window --swap west
+
+# warp(may insert) to west 
+cmd + ctrl - o : yabai -m window --warp west
+
+# warp(may insert) to east 
+cmd + ctrl - p : yabai -m window --warp east
+

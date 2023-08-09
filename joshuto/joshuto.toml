@@ -35,8 +35,10 @@ directories_first = true
 reverse = false
 
 [preview]
-max_preview_size = 2097152                           # 2MB
+max_preview_size = 15097152                           # 2MB
 preview_script = "~/.config/joshuto/preview_file.sh" # make sure it's marked as executable
+preview_shown_hook_script = "~/.config/joshuto/preview_file_1.sh"
+preview_removed_hook_script = "~/.config/joshuto/preview_file_2.sh"
 
 [tab]
 # inherit, home, root

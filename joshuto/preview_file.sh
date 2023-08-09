@@ -177,10 +177,20 @@ handle_mime() {
             exit 1;;
 
         ## Image
+#            ## Preview as text conversion
+#            exiftool "${FILE_PATH}" && exit 0
+#            exit 1;;
+#
         image/*)
-            ## Preview as text conversion
-            exiftool "${FILE_PATH}" && exit 0
-            exit 1;;
+		dimension="Size `exiftool "$path" | grep '^Image Size' | awk '{print $4}'`"
+		tags=$(tmsu_tag_list)
+		echo "$dimension"
+		echo "$tags"
+		meta_file=$(get_preview_meta_file "$path")
+		let y_offset=`printf "${tags}" | sed -n '=' | wc -l`+2
+		echo "y-offset $y_offset" > "$meta_file"
+		exit 4
+		;;
 
         ## Video and audio
         video/* | audio/*)
@@ -196,4 +206,3 @@ handle_extension
 MIMETYPE="$( file --dereference --brief --mime-type -- "${FILE_PATH}" )"
 handle_mime "${MIMETYPE}"
 
-exit 1
