@@ -112,6 +112,20 @@ return
       -- that will be available in all sources (if not overridden in `opts[source_name].commands`)
       -- see `:h neo-tree-custom-commands-global`
       commands = {},
+      -- event_handlers = {
+      --    {
+      --    event = "vim_buffer_changed",
+      --    handler = function()
+      --      vim.cmd 'bprevious'
+      --    end
+      --  },
+      --   {
+      --   event = "vim_buffer_enter",
+      --   handler = function()
+      --      vim.cmd 'bprevious'
+      --   end
+      -- },
+      -- },
       window = {
         position = "left",
         width = 40,
@@ -139,7 +153,7 @@ return
           -- ["t"] = "open_tab_drop",
           ["w"] = "open_with_window_picker",
           --["P"] = "toggle_preview", -- enter preview mode, which shows the current node without focusing
-          ["C"] = "close_node",
+          ["h"] = "close_node",
           -- ['C'] = 'close_all_subnodes',
           ["z"] = "close_all_nodes",
           --["Z"] = "expand_all_nodes",
@@ -210,6 +224,16 @@ return
         -- "disabled",    -- netrw left alone, neo-tree does not handle opening dirs
         use_libuv_file_watcher = false, -- This will use the OS level file watchers to detect changes
         -- instead of relying on nvim autocmd events.
+        event_handlers = {
+          {
+            event = "file_opened",
+            handler = function(file_path)
+              --auto close
+              require("neo-tree").close_all()
+              vim.cmd "Neotree action=close position=left"
+            end
+          },
+        },
         window = {
           mappings = {
             ["<bs>"] = "navigate_up",

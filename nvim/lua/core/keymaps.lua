@@ -10,8 +10,8 @@ local keymap = vim.keymap
 ---------------------------------------------------
 
 -- use "J" and "K" to move lines in visual mode
-keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+-- keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+-- keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 ---------------------------------------------------
 ---------------- normal mode ----------------------
@@ -39,6 +39,7 @@ keymap.set("n", "H", ":bprevious<CR>")
 
 -- use Q and <leader>q to quit a pane
 -- keymap.set("n", "<leader>q", ":bd | bprev<CR>") -- used to quit a window/pane without saving
+keymap.set("n", "<leader>q", ":bd<CR>") -- used to quit a window/pane without saving
 -- keymap.set("n", "<leader>Q", ":q!<CR>") -- used to quit a window/pane without saving
 -- keymap.set("n", "Q", ":wq<CR>")         -- used to save and quit a window/pane normally
 
@@ -50,3 +51,11 @@ keymap.set("n", "S", ":w<CR>")
 
 -- plugins
 keymap.set("n", "<leader>e", ":Neotree toggle reveal_force_cwd<cr>")
+
+-- Resize Windows
+keymap.set("n", "<C-Left>", "<C-w><")
+keymap.set("n", "<C-Right>", "<C-w>>")
+keymap.set("n", "<C-Up>", "<C-w>+")
+keymap.set("n", "<C-Down>", "<C-w>-")
+
+

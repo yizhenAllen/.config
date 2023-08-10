@@ -15,7 +15,6 @@ opt.clipboard:append("unnamedplus")
 -- line number
 opt.relativenumber = true
 opt.number = true
-
 -- indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
@@ -54,7 +53,7 @@ opt.signcolumn = "yes"
 vim.o.breakindent = true
 
 -- Save undo history
-vim.o.undofile = true
+vim.o.undofile = false
 
 -- Decrease update time
 vim.o.updatetime = 250
@@ -77,7 +76,7 @@ opt.formatoptions = "jcroqlnt" -- tcqj
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
 opt.laststatus = 0
-opt.list = true                    -- Show some invisible characters (tabs...
+opt.list = false                    -- Show some invisible characters (tabs...
 opt.pumblend = 10                  -- Popup blend
 opt.pumheight = 10                 -- Maximum number of entries in a popupsopt.scrolloff = 4 -- Lines of context
 opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
