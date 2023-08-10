@@ -34,10 +34,10 @@ yabai -m config mouse_follows_focus off
 yabai -m rule --add app="^.*$" manage=off
 
 # Disable specific apps
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^QQ$" manage=off
-yabai -m rule --add app="^WeChat$" manage=off
-yabai -m rule --add app="^Mail$" manage=off
+# yabai -m rule --add app="^System Preferences$" manage=off
+# yabai -m rule --add app="^QQ$" manage=off
+# yabai -m rule --add app="^WeChat$" manage=off
+# yabai -m rule --add app="^Mail$" manage=off
 
 # enable some apps
 yabai -m rule --add app="^Google Chrome$" manage=on

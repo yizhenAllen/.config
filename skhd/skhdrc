@@ -16,24 +16,28 @@ cmd + ctrl - b : yabai -m space --balance
 # emergency using
 cmd + ctrl - n : yabai -m window --toggle float
 
-# flip along y-axis
-cmd + ctrl - y : yabai -m space --mirror x-axis
-
-# flip along x-axis
-cmd + ctrl - x : yabai -m space --mirror y-axis
+########useless#########
+# # flip along y-axis
+# cmd + ctrl - y : yabai -m space --mirror x-axis
+# 
+# # flip along x-axis
+# cmd + ctrl - x : yabai -m space --mirror y-axis
+########useless#########
 
 # rotate layout
 cmd + ctrl - r : yabai -m space --rotate 270
 
-# swap to east 
-cmd + ctrl - i : yabai -m window --swap east
+# swap to east, west and so on
+cmd + ctrl - y : yabai -m window --swap west
+cmd + ctrl - o : yabai -m window --swap east
+cmd + ctrl - u : yabai -m window --swap south
+cmd + ctrl - i : yabai -m window --swap north
 
-# swap to west 
-cmd + ctrl - u : yabai -m window --swap west
+# warp(may insert) to west, east and so on
+cmd + ctrl - 6 : yabai -m window --warp west
+cmd + ctrl - 9 : yabai -m window --warp east
+cmd + ctrl - 7 : yabai -m window --warp south
+cmd + ctrl - 8 : yabai -m window --warp north
 
-# warp(may insert) to west 
-cmd + ctrl - o : yabai -m window --warp west
-
-# warp(may insert) to east 
-cmd + ctrl - p : yabai -m window --warp east
-
+# toggle to cover windows that have a same level
+cmd + ctrl - p : yabai -m window --toggle zoom-parent

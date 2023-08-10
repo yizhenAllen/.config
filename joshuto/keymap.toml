@@ -90,7 +90,8 @@ keymap = [
   { keys = ["f", "t"], command = ":touch " },
 
   { keys = [" "], command = "select --toggle=true" },
-  { keys = ["t"], command = "select --all=true --toggle=true" },
+  { keys = ["t", "t"], command = "select --all=true --toggle=true" },
+  { keys = ["t", "o"], command = ":touch " },
   { keys = ["V"], command = "toggle_visual" },
 
   { keys = ["w"], command = "show_tasks --exit-key=w" },
