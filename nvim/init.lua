@@ -1,6 +1,5 @@
--- require("kickstart")
 require("core.options")
 require("core.keymaps")
 require("core.autocmd")
 require("core.lazy")
-require("kickstart.kickstart")
+require("kickstart.kstart_key&config")

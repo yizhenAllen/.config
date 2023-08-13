@@ -24,8 +24,9 @@ opt.autoindent = true
 -- avoid wrapping codes automaticly
 opt.wrap = false
 
--- cursor line
+-- cursor line & highlight
 opt.cursorline = true
+vim.cmd('highlight CursorLine guibg=#3d4f39') -- will be covered by the colorscheme if put here
 
 -- split to right and down
 opt.splitbelow = true
@@ -39,9 +40,17 @@ opt.smartcase = true
 opt.termguicolors = true
 opt.signcolumn = "yes"
 
+-- hide command line automatically
+vim.cmd('set cmdheight=0')
+
+vim.g.loaded_perl_provider = 0 -- do not use perl binding
+vim.g.loaded_ruby_provider = 0 -- do not use ruby binding
+
+
+--
 -- fold method, can be set to syntax but need additional config
 -- opt.foldenable = false
--- opt.foldmethod = "syntax"
+-- opt.foldmethod = "mannual"
 -- opt.foldexpr = "nvim_treesitter#foldexpr()"
 -- opt.foldlevel = 0
 
@@ -64,9 +73,15 @@ vim.o.completeopt = 'menuone,noselect'
 
 
 ----------------------------------------------
+-------------kickstart keymaps---------------
+----------------------------------------------
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+
+
+
+----------------------------------------------
 -------------lazyvim configes-----------------
 ----------------------------------------------
-
 opt.autowrite = true           -- Enable auto write
 opt.completeopt = "menu,menuone,noselect"
 opt.conceallevel = 3           -- Hide * markup for bold and italic
@@ -76,7 +91,7 @@ opt.formatoptions = "jcroqlnt" -- tcqj
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
 opt.laststatus = 0
-opt.list = false                    -- Show some invisible characters (tabs...
+opt.list = false                   -- Show some invisible characters (tabs...
 opt.pumblend = 10                  -- Popup blend
 opt.pumheight = 10                 -- Maximum number of entries in a popupsopt.scrolloff = 4 -- Lines of context
 opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
@@ -98,3 +113,9 @@ end
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
+
+----------------------------------------------
+-------------lazyvim configes-----------------
+----------------------------------------------
+vim.bo.buflisted = true

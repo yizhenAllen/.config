@@ -14,6 +14,7 @@ keymap = [
   { keys = ["R"], command = "reload_dirlist" },
   { keys = ["z", "h"], command = "toggle_hidden" },
   { keys = ["ctrl+h"], command = "toggle_hidden" },
+  { keys = ["H"], command = "toggle_hidden" },
   { keys = ["\t"], command = "tab_switch 1" },
   { keys = ["backtab"], command = "tab_switch -1" },
 
@@ -59,7 +60,7 @@ keymap = [
   { keys = ["G"], command = "cursor_move_end" },
   { keys = ["r"], command = ":rename " },
 
-  { keys = ["H"], command = "cursor_move_page_home" },
+  # { keys = ["H"], command = "cursor_move_page_home" },
   { keys = ["L"], command = "cursor_move_page_middle" },
 
   #{ keys = ["M"], command = "cursor_move_page_end" },

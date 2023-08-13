@@ -128,7 +128,7 @@ return
       -- },
       window = {
         position = "left",
-        width = 40,
+        width = 25,
         mapping_options = {
           noremap = true,
           nowait = true,
@@ -139,14 +139,15 @@ return
             nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
           },
           ["<2-LeftMouse>"] = "open",
-          ["<cr>"] = "open",
-          ["l"] = "open",
+          -- ["<cr>"] = "open",
+          -- ["l"] = "open",
+          ["o"] = "open",
           ["<esc>"] = "cancel", -- close preview or floating neo-tree window
           ["<Tab>"] = { "toggle_preview", config = { use_float = true } },
           ["L"] = "focus_preview",
           ["S"] = "open_split",
           ["s"] = "open_vsplit",
-          -- ["S"] = "split_with_window_picker",
+          -- ["S"] = "spliCRt_with_window_picker",
           -- ["s"] = "vsplit_with_window_picker",
           ["t"] = "open_tabnew",
           -- ["<cr>"] = "open_drop",
@@ -155,8 +156,8 @@ return
           --["P"] = "toggle_preview", -- enter preview mode, which shows the current node without focusing
           ["h"] = "close_node",
           -- ['C'] = 'close_all_subnodes',
-          ["z"] = "close_all_nodes",
-          --["Z"] = "expand_all_nodes",
+          ["Z"] = "close_all_nodes",
+          ["z"] = "expand_all_nodes",
           ["a"] = {
             "add",
             -- this command supports BASH style brace expansion ("x{a,b,c}" -> xa,xb,xc). see `:h neo-tree-file-actions` for details
@@ -188,6 +189,7 @@ return
       },
       nesting_rules = {},
       filesystem = {
+        bind_to_cwd = false,
         filtered_items = {
           visible = false, -- when true, they will just be displayed differently than normal items
           hide_dotfiles = true,
@@ -204,7 +206,7 @@ return
             --".gitignored",
           },
           never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
-            --".DS_Store",
+            ".DS_Store",
             --"thumbs.db"
           },
           never_show_by_pattern = { -- uses glob style patterns
@@ -236,9 +238,9 @@ return
         },
         window = {
           mappings = {
-            ["<bs>"] = "navigate_up",
-            ["."] = "set_root",
-            ["H"] = "toggle_hidden",
+            ["h"] = "navigate_up",
+            ["l"] = "set_root",
+            ["H"] = "toggle_hidden", -- <C-h>'s been used to navigate
             ["/"] = "fuzzy_finder",
             ["D"] = "fuzzy_finder_directory",
             ["#"] = "fuzzy_sorter", -- fuzzy sorting using the fzy algorithm
@@ -269,8 +271,8 @@ return
         window = {
           mappings = {
             ["bd"] = "buffer_delete",
-            ["<bs>"] = "navigate_up",
-            ["."] = "set_root",
+            ["h"] = "navigate_up",
+            ["l"] = "set_root",
           }
         },
       },
