@@ -21,13 +21,21 @@ return {
 
   {
     'morhetz/gruvbox',
+    lazy = false,
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       vim.g.gruvbox_contrast_dark = 'soft'
       vim.cmd.colorscheme 'gruvbox'
-      vim.cmd('highlight CursorLine guibg=#3d4f39') -- be covered by the colorscheme if put here
+      vim.cmd('highlight Cursor guibg=#83D87D')
+      vim.cmd('highlight CursorLine guibg=#3E4F50')
+      -- set the cursor blinking
+      vim.cmd(
+        "set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175")
     end
   }
+
+  -- set guicursor="n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
+
 
   -- {
   --   'marko-cerovac/material.nvim',

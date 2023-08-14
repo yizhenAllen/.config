@@ -70,7 +70,7 @@ vim.api.nvim_create_autocmd("FileType", {
 -- wrap and check for spell in text filetypes
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup("wrap_spell"),
-  pattern = { "gitcommit", "markdown" },
+  pattern = { "gitcommit", "markdown", "text", "log" },
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
@@ -87,4 +87,48 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     local file = vim.loop.fs_realpath(event.match) or event.match
     vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
   end,
+})
+
+-- auto save fold view after exit a file
+vim.api.nvim_create_autocmd({ "BufLeave", "BufWinLeave", "InsertLeave" }, {
+  group = augroup("remenber_folds"),
+  callback = function()
+    vim.cmd "silent! mkview"
+  end,
+  group = general,
+})
+
+-- auto save fold view after exit a file
+vim.api.nvim_create_autocmd({ "BufWinEnter", "BufEnter", "FocusGained" }, {
+  group = augroup("remenber_folds"),
+  callback = function()
+    vim.cmd "silent! loadview"
+  end,
+  group = general,
+})
+
+-- Autosave
+vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave", "BufWinLeave", "InsertLeave" }, {
+  callback = function()
+    vim.cmd "silent! w"
+  end,
+  group = general,
+  desc = "Auto Save",
+})
+
+-- Disable new line comment
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    vim.opt.formatoptions:remove { "c", "r", "o" }
+  end,
+  group = general,
+  desc = "Disable New Line Comment",
+})
+
+vim.api.nvim_create_autocmd("FocusGained", {
+  callback = function()
+    vim.cmd "checktime"
+  end,
+  group = general,
+  desc = "Update file when there are changes",
 })

@@ -3,7 +3,7 @@ return
   "nvim-neo-tree/neo-tree.nvim",
   branch = "v3.x",
   dependencies = {
-    "nvim-lua/plenary.nvim",
+    "nvim-lua/plenary.nvim",       -- losts of useful funtions
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
     {

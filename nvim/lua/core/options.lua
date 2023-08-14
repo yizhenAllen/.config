@@ -19,7 +19,6 @@ opt.number = true
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
-opt.autoindent = true
 
 -- avoid wrapping codes automaticly
 opt.wrap = false
@@ -43,23 +42,34 @@ opt.signcolumn = "yes"
 -- hide command line automatically
 vim.cmd('set cmdheight=0')
 
-vim.g.loaded_perl_provider = 0 -- do not use perl binding
-vim.g.loaded_ruby_provider = 0 -- do not use ruby binding
+vim.g.loaded_perl_provider = 0     -- do not use perl binding
+vim.g.loaded_ruby_provider = 0     -- do not use ruby binding
 
+opt.iskeyword:append({ "-", "_" }) -- see '-' as part of a word
 
---
--- fold method, can be set to syntax but need additional config
--- opt.foldenable = false
--- opt.foldmethod = "mannual"
--- opt.foldexpr = "nvim_treesitter#foldexpr()"
--- opt.foldlevel = 0
+--fold options
+vim.o.foldenable = true
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()" --use treesitter to fold
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+-- add following or files opened by telescope cannot be folded
+vim.api.nvim_create_autocmd({ "BufEnter" }, { pattern = { "*" }, command = "normal zx" })
+vim.keymap.set("n", "R", "za")
+
+--language settings
+vim.cmd("lan en_Us.UTF-8")
 
 ----------------------------------------------
 -------------kickstart configes---------------
 ----------------------------------------------
 
--- Enable break indent
-vim.o.breakindent = true
+vim.o.breakindent = true --preseving indent when wrap
+
+-- inset indents
+opt.autoindent = true
+opt.smartindent = true
+opt.backspace = "indent,eol,start"
 
 -- Save undo history
 vim.o.undofile = false
@@ -71,13 +81,10 @@ vim.o.timeoutlen = 300
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
-
 ----------------------------------------------
 -------------kickstart keymaps---------------
 ----------------------------------------------
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
-
-
 
 ----------------------------------------------
 -------------lazyvim configes-----------------
@@ -99,7 +106,6 @@ opt.shiftround = true              -- Round indent
 opt.shortmess:append({ W = true, I = true, c = true })
 opt.showmode = false               -- Dont show mode since we have a statusline
 opt.sidescrolloff = 8              -- Columns of context
-opt.smartindent = true             -- Insert indents automatically
 opt.spelllang = { "en" }
 opt.tabstop = 2                    -- Number of spaces tabs count for
 opt.undolevels = 10000
