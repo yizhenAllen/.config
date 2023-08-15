@@ -3,7 +3,7 @@ return {
   version = "*",
   -- opts = true,
   opts = {
-    size = 15,
+    size = 13,
     open_mapping = [[<c-t>]],
     hide_numbers = true,
     shade_filetypes = {},
@@ -33,11 +33,8 @@ return {
       vim.api.nvim_buf_set_keymap(0, 't', '<C-k>', [[<C-\><C-n><C-W>k]], opts)
       vim.api.nvim_buf_set_keymap(0, 't', '<C-l>', [[<C-\><C-n><C-W>l]], opts)
     end
-vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
-
     local Terminal = require("toggleterm.terminal").Terminal
-
-    local lazygit = Terminal:new({ cmd = "lazygit", direction = "float", hidden = true })
+    local lazygit = Terminal:new({ cmd = "lazygit", size = 20, direction = "float", hidden = true })
     function _LAZYGIT_TOGGLE()
       lazygit:toggle()
     end
@@ -51,10 +48,10 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
     function _PYTHON()
       python:toggle()
     end
-
     vim.keymap.set("n", "<leader>tl", function() vim.cmd("lua _LAZYGIT_TOGGLE()") end, { desc = "open lazygit" })
     vim.keymap.set("n", "<leader>tj", function() vim.cmd("lua _JOSHUTO()") end, { desc = "open joshuto" })
     vim.keymap.set("n", "<leader>tp", function() vim.cmd("lua _PYTHON()") end, { desc = "open python" })
     vim.keymap.set("n", "<leader>rp", function() vim.cmd("TermExec cmd='python -u %'") end, { desc = "run python" })
+    vim.keymap.set("n", "<leader>dS", function() vim.cmd("TermExec cmd='rm /Users/yizhen/.local/share/nvim/sessions/*'") end, { desc = "delete session" })
   end,
 }

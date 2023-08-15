@@ -1,7 +1,6 @@
 return {
   'tpope/vim-fugitive', -- add git support, gonna delete if I use lazygit
   'tpope/vim-rhubarb',  -- related to the previous one
-  'tpope/vim-sleuth',   -- Detect tabstop and shiftwidth automatically
 
   -- LSP Configuration & Plugins
   {

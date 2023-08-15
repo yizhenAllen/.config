@@ -1,4 +1,5 @@
 -- This file is automatically loaded by lazyvim.config.init.
+--
 
 local function augroup(name)
   return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
@@ -96,15 +97,17 @@ vim.api.nvim_create_autocmd({ "BufLeave", "BufWinLeave", "InsertLeave" }, {
     vim.cmd "silent! mkview"
   end,
   group = general,
+  desc = "save fold view"
 })
 
--- auto save fold view after exit a file
-vim.api.nvim_create_autocmd({ "BufWinEnter", "BufEnter", "FocusGained" }, {
+-- auto load fold view after enter a file
+vim.api.nvim_create_autocmd({ "BufRead", "BufWinEnter", "BufEnter", "FocusGained" }, {
   group = augroup("remenber_folds"),
   callback = function()
     vim.cmd "silent! loadview"
   end,
   group = general,
+  desc = "load fold view",
 })
 
 -- Autosave
@@ -117,18 +120,10 @@ vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave", "BufWinLeave", "InsertLea
 })
 
 -- Disable new line comment
-vim.api.nvim_create_autocmd("BufEnter", {
+vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "FocusGained" }, {
   callback = function()
     vim.opt.formatoptions:remove { "c", "r", "o" }
   end,
   group = general,
   desc = "Disable New Line Comment",
-})
-
-vim.api.nvim_create_autocmd("FocusGained", {
-  callback = function()
-    vim.cmd "checktime"
-  end,
-  group = general,
-  desc = "Update file when there are changes",
 })

@@ -1,5 +1,4 @@
 -- when open a file, let nvim right at the position where the lastest change of this file happened.
-
 vim.cmd [[
   autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 ]]
@@ -49,16 +48,25 @@ opt.iskeyword:append({ "-", "_" }) -- see '-' as part of a word
 
 --fold options
 vim.o.foldenable = true
-opt.foldmethod = "expr"
-opt.foldexpr = "nvim_treesitter#foldexpr()" --use treesitter to fold
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
+vim.keymap.set("n", "R", "za") -- use R to fold
+
+-- use basic treesitter to fold
+-- opt.foldmethod = "expr"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()" --use treesitter to fold
+
 -- add following or files opened by telescope cannot be folded
-vim.api.nvim_create_autocmd({ "BufEnter" }, { pattern = { "*" }, command = "normal zx" })
-vim.keymap.set("n", "R", "za")
+vim.api.nvim_create_autocmd({ "BufWinEnter", "BufEnter", "FocusGained" }, { pattern = { "*" }, command = "normal zx" })
 
 --language settings
 vim.cmd("lan en_Us.UTF-8")
+
+--copilot settings
+vim.g.copilot_assume_mapped = true
+vim.g.copilot_no_tab_map = true
+-- map ctrl j to accept copilite suggestions in neovim
+vim.api.nvim_set_keymap("i", "<c-j>", 'copilot#Accept("")', { expr = true, noremap = true, silent = true })
 
 ----------------------------------------------
 -------------kickstart configes---------------
@@ -120,8 +128,8 @@ end
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
 
-
 ----------------------------------------------
 -------------lazyvim configes-----------------
 ----------------------------------------------
+
 vim.bo.buflisted = true

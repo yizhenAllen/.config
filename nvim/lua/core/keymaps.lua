@@ -54,6 +54,11 @@ keymap.set("n", "<leader>st", "<C-w>T") -- grab split into a new tab
 -- use maximizer
 keymap.set("n", "<leader>m", ":MaximizerToggle<cr>")
 
+--unmap space, and map j,k to gj,gk
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+
 -- yank current filepath
 keymap.set("n", "<leader>yp", function() vim.cmd("let @+ = expand('%:p')") end, { desc = "yank current filepath" })
 
