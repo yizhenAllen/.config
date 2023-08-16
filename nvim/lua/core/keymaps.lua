@@ -12,6 +12,16 @@ keymap.set("v", "J", "j") -- get rid of moving line when select
 -- unmap space key in visual mode
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
+--stay in indent mode
+keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+
+keymap.set("v", "p", '"_dP') --don't copy when press p in visual mode
+
+--move text up and down in visual mode
+keymap.set("v", "<C-j>", ":move '>+1<CR>gv-gv", opts)
+keymap.set("v", "<C-k>", ":move '<-2<CR>gv-gv", opts)
+
 ---------------------------------------------------
 ---------------- normal mode ----------------------
 ---------------------------------------------------
@@ -62,12 +72,6 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- yank current filepath
 keymap.set("n", "<leader>yp", function() vim.cmd("let @+ = expand('%:p')") end, { desc = "yank current filepath" })
 
---open lazygit and joshuto via toggleTerm
-vim.keymap.set("n", "<leader>tl", function() vim.cmd("lua _LAZYGIT_TOGGLE()") end, { desc = "open lazygit" })
-vim.keymap.set("n", "<leader>tj", function() vim.cmd("lua _JOSHUTO()") end, { desc = "open joshuto" })
-vim.keymap.set("n", "<leader>tp", function() vim.cmd("lua _PYTHON()") end, { desc = "open python" })
-vim.keymap.set("n", "<leader>rp", function() vim.cmd("TermExec cmd='python -u %'") end, { desc = "run python" })
-
 --increment and decrement numbers
 keymap.set("n", "<leader>+", "<C-a>")
 keymap.set("n", "<leader>-", "<C-x>")
@@ -80,3 +84,4 @@ keymap.set({ "n", "v" }, "x", '"_d')
 keymap.set({ "n", "v" }, "xx", '"_dd')
 keymap.set({ "n", "v" }, "X", '"_d$')
 keymap.set({ "n", "v" }, "<leader>x", '"_d^')
+

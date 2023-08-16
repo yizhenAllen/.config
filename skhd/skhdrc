@@ -6,6 +6,14 @@ cmd + ctrl - k : /opt/homebrew/bin/yabai -m window --focus north
 cmd + ctrl - h : /opt/homebrew/bin/yabai -m window --focus west
 cmd + ctrl - l : /opt/homebrew/bin/yabai -m window --focus east
 
+# change window focus within displays
+cmd + shift - h : /opt/homebrew/bin/yabai -m display --focus 2
+cmd + shift - l : /opt/homebrew/bin/yabai -m display --focus 1
+
+# move windows within displays
+cmd + shift - y : yabai -m window --display 2
+cmd + shift - o : yabai -m window --display 1
+
 # most important
 cmd + ctrl - e: yabai -m window --toggle zoom-fullscreen
 cmd + ctrl - m: yabai -m window --toggle zoom-fullscreen

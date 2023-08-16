@@ -39,22 +39,24 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- hide command line automatically
-vim.cmd('set cmdheight=0')
+vim.cmd('set  cmdheight=0')
 
 vim.g.loaded_perl_provider = 0     -- do not use perl binding
 vim.g.loaded_ruby_provider = 0     -- do not use ruby binding
 
-opt.iskeyword:append({ "-", "_" }) -- see '-' as part of a word
+opt.iskeyword:append({ "_" }) -- see '-' as part of a word
 
 --fold options
+-- vim.o.foldmethod = "manual"
+-- autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 vim.o.foldenable = true
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.keymap.set("n", "R", "za") -- use R to fold
 
 -- use basic treesitter to fold
--- opt.foldmethod = "expr"
--- opt.foldexpr = "nvim_treesitter#foldexpr()" --use treesitter to fold
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()" --use treesitter to fold
 
 -- add following or files opened by telescope cannot be folded
 vim.api.nvim_create_autocmd({ "BufWinEnter", "BufEnter", "FocusGained" }, { pattern = { "*" }, command = "normal zx" })
