@@ -39,7 +39,7 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- hide command line automatically
-vim.cmd('set  cmdheight=0')
+vim.cmd('set cmdheight=0')
 
 vim.g.loaded_perl_provider = 0     -- do not use perl binding
 vim.g.loaded_ruby_provider = 0     -- do not use ruby binding
@@ -47,12 +47,12 @@ vim.g.loaded_ruby_provider = 0     -- do not use ruby binding
 opt.iskeyword:append({ "_" }) -- see '-' as part of a word
 
 --fold options
--- vim.o.foldmethod = "manual"
--- autocmd InsertEnter,WinLeave * setlocal foldmethod=manual
 vim.o.foldenable = true
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
-vim.keymap.set("n", "R", "za") -- use R to fold
+
+-- vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+-- vim.o.foldcolumn = '1'
 
 -- use basic treesitter to fold
 opt.foldmethod = "expr"
@@ -69,6 +69,11 @@ vim.g.copilot_assume_mapped = true
 vim.g.copilot_no_tab_map = true
 -- map ctrl j to accept copilite suggestions in neovim
 vim.api.nvim_set_keymap("i", "<c-j>", 'copilot#Accept("")', { expr = true, noremap = true, silent = true })
+
+-- let neovim scroll the screen when four lines left to the bottom
+vim.cmd("set scrolloff=3")
+
+
 
 ----------------------------------------------
 -------------kickstart configes---------------

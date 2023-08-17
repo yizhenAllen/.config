@@ -14,7 +14,7 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 --stay in indent mode
 keymap.set("v", "<", "<gv")
-keymap.set("v", ">", ">gv")
+keymap.set("v", ">", ">gvi")
 
 keymap.set("v", "p", '"_dP') --don't copy when press p in visual mode
 
@@ -85,3 +85,5 @@ keymap.set({ "n", "v" }, "xx", '"_dd')
 keymap.set({ "n", "v" }, "X", '"_d$')
 keymap.set({ "n", "v" }, "<leader>x", '"_d^')
 
+vim.keymap.set("n", "<leader>r", "za") -- use <leader>r to fold
+vim.keymap.set("n", "R", "za") -- use <leader>r to fold
