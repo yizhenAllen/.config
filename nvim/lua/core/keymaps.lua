@@ -13,8 +13,8 @@ keymap.set("v", "J", "j") -- get rid of moving line when select
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 --stay in indent mode
-keymap.set("v", "<", "<gv")
-keymap.set("v", ">", ">gvi")
+  keymap.set("v", "<", "<gv")
+  keymap.set("v", ">", ">gv")
 
 keymap.set("v", "p", '"_dP') --don't copy when press p in visual mode
 
@@ -50,8 +50,8 @@ keymap.set("n", "<leader>q", ":bd<CR>") -- used to quit a window/pane without sa
 -- leader w to write
 keymap.set("n", "<leader>w", ":w<cr>", { desc = "write" }) -- write current file
 
--- plugins
--- keymap.set("n", "<leader>e", ":Neotree toggle reveal_force_cwd<cr>")
+-- neotree
+keymap.set("n", "<leader>k", ":Neotree<cr>")
 keymap.set("n", "<leader>e", ":Neotree toggle float dir=%:p:h reveal reveal_force_cwd<cr>")
 
 -- Resize Windows
@@ -84,6 +84,10 @@ keymap.set({ "n", "v" }, "x", '"_d')
 keymap.set({ "n", "v" }, "xx", '"_dd')
 keymap.set({ "n", "v" }, "X", '"_d$')
 keymap.set({ "n", "v" }, "<leader>x", '"_d^')
+
+--use leader d to delete to the head
+keymap.set("n", "<leader>d", "d^")
+keymap.set("n", "<leader>c", "c^")
 
 vim.keymap.set("n", "<leader>r", "za") -- use <leader>r to fold
 vim.keymap.set("n", "R", "za") -- use <leader>r to fold

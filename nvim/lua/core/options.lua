@@ -73,8 +73,6 @@ vim.api.nvim_set_keymap("i", "<c-j>", 'copilot#Accept("")', { expr = true, norem
 -- let neovim scroll the screen when four lines left to the bottom
 vim.cmd("set scrolloff=3")
 
-
-
 ----------------------------------------------
 -------------kickstart configes---------------
 ----------------------------------------------

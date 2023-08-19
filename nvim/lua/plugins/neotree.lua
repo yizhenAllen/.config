@@ -184,7 +184,6 @@ return
           ["R"] = "refresh",
           ["?"] = "show_help",
           ["<"] = "prev_source",
-          [">"] = "next_source",
         }
       },
       nesting_rules = {},

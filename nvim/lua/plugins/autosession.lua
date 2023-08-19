@@ -8,13 +8,4 @@ return {
       end,
     },
   },
-  -- init = function ()
-  --   vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave", "BufWinLeave", "InsertLeave" }, {
-  --     callback = function()
-  --       vim.cmd "SessionSave"
-  --     end,
-  --     group = general,
-  --     desc = "Auto Save",
-  --   })
-  -- end
 }
