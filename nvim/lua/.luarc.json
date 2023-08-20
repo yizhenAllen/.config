@@ -46,6 +46,15 @@
         "/Users/yizhen/.local/share/nvim/lazy/telescope.nvim/lua",
         "/Users/yizhen/.local/share/nvim/lazy/neodev.nvim/lua",
         "/Users/yizhen/.config/nvim/lua",
+        "${3rd}/luv/library",
         "${3rd}/luv/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false,
+    "diagnostics.globals": [
+        "required"
+    ],
+    "diagnostics.disable": [
+        "undefined-global"
+    ],
+    "completion.autoRequire": false
 }

@@ -7,7 +7,9 @@ local keymap = vim.keymap
 ---------------------------------------------------
 ---------------- visual mode ----------------------
 ---------------------------------------------------
-keymap.set("v", "J", "j") -- get rid of moving line when select
+--unmap J when in visual mode
+vim.keymap.set('v', 'J', 'j', { silent = true })
+vim.keymap.set('v', 'K', 'k', { silent = true })
 
 -- unmap space key in visual mode
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
@@ -19,8 +21,8 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 keymap.set("v", "p", '"_dP') --don't copy when press p in visual mode
 
 --move text up and down in visual mode
-keymap.set("v", "<C-j>", ":move '>+1<CR>gv-gv", opts)
-keymap.set("v", "<C-k>", ":move '<-2<CR>gv-gv", opts)
+keymap.set("v", "<C-j>", ": m '>+1<CR>gv-gv")
+keymap.set("v", "<C-k>", ": m '<-2<CR>gv-gv")
 
 ---------------------------------------------------
 ---------------- normal mode ----------------------
@@ -31,7 +33,8 @@ keymap.set("n", "r", "<C-r>")
 
 -- split windows & navigation
 keymap.set("n", "<leader>sl", "<C-w>v") -- vertically split
-keymap.set("", "<leader>sj", "<C-w>s")  -- horizontally split
+keymap.set("n", "<leader>sj", "<C-w>s")  -- horizontally split
+keymap.set("n", "<leader>sw", "<C-w>w")  -- switch window focus
 
 -- navigate between tabs
 keymap.set("n", "<leader>h", "gt")
@@ -43,7 +46,6 @@ keymap.set("n", "<leader>n", ":nohl<cr>")
 -- switch between buffers
 keymap.set("n", "L", ":bnext<CR>")
 keymap.set("n", "H", ":bprevious<CR>")
-
 -- use leader q to quit buffer
 keymap.set("n", "<leader>q", ":bd<CR>") -- used to quit a window/pane without saving
 
@@ -91,3 +93,9 @@ keymap.set("n", "<leader>c", "c^")
 
 vim.keymap.set("n", "<leader>r", "za") -- use <leader>r to fold
 vim.keymap.set("n", "R", "za") -- use <leader>r to fold
+
+-- hold the cursor posi when press J
+keymap.set("n", "J", "mzJ`z")
+
+keymap.set("n", "n", "nzz")
+keymap.set("n", "N", "Nzz")

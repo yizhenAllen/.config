@@ -63,6 +63,7 @@ return {
         { name = "path" },                      -- file system paths
       }),
 
+---@diagnostic disable-next-line: missing-fields
       formatting = {
         fields = {"abbr", "kind", "menu"},
 
@@ -90,6 +91,7 @@ return {
       },
       window = {
         documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered({border = "rounded"}),
       },
       experimental = {
         ghost_text = false,
