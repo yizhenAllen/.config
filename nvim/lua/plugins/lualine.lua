@@ -1,9 +1,8 @@
 return
 {
-  --    -- Set lualine as statusline
   'nvim-lualine/lualine.nvim',
-  -- See `:help lualine.txt`
-  opts = {
+  config = function()
+      require('lualine').setup({
     options = {
       icons_enabled = true,
       transparent = false,
@@ -24,5 +23,7 @@ return
         }
       }
     }
-  }
+  })
+   -- vim.cmd("hi lualine_c_normal guibg=nil")
+  end
 }

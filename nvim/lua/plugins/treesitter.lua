@@ -14,10 +14,8 @@ return {
       sync_install = false,
       ignore_install = {},
       auto_install = false,
-
-      -- highlight = { enable = true , disable = {"python"} },
       highlight = { enable = true, additional_vim_regex_highlighting = false},
-      indent = { enable = false, disable = {"python"} },
+      indent = { enable = true, disable = {"python"} },
       incremental_selection = {
         enable = true,
         keymaps = {

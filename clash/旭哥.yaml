@@ -15,7 +15,7 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：94.48 GB', type: trojan, server: sgfsc.fscloud12345678901.com, port: 29000, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true }
+    - { name: '剩余流量：94.43 GB', type: trojan, server: sgfsc.fscloud12345678901.com, port: 29000, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true }
     - { name: 套餐到期：长期有效, type: trojan, server: sgfsc.fscloud12345678901.com, port: 29000, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true }
     - { name: '导航页二：https://github.com/spsp1111/swebsite', type: trojan, server: sgfsc.fscloud12345678901.com, port: 29000, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true }
     - { name: 新加坡落地A-02, type: trojan, server: sgfsc.fscloud12345678901.com, port: 29000, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true }
@@ -43,9 +43,9 @@ proxies:
     - { name: 德国01, type: ss, server: spc123.sankuaiqianshao.com, port: 24006, cipher: chacha20-ietf-poly1305, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true }
     - { name: 德国02, type: ss, server: spc123.sankuaiqianshao.com, port: 24006, cipher: chacha20-ietf-poly1305, password: 83bb82a2-5793-4f79-91ef-b8404fe39ba1, udp: true }
 proxy-groups:
-    - { name: Spcloud, type: select, proxies: [自动选择, 故障转移, '剩余流量：94.48 GB', 套餐到期：长期有效, '导航页二：https://github.com/spsp1111/swebsite', 新加坡落地A-02, 日本落地A-02, 日本落地A-01, 新加坡落地A-01, '美国01 - SS', '美国02 - SS', 香港01-SS, 香港02-SS, 新加坡01-SS, 日本01-SS, 英国SS, 台湾01-SS, 台湾02-SS, 加拿大01, 加拿大02, 韩国01, 韩国02, 香港03-SS, 马来西亚, 马来西亚02, 新加坡02-SS, 日本02-SS, 德国01, 德国02] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：94.48 GB', 套餐到期：长期有效, '导航页二：https://github.com/spsp1111/swebsite', 新加坡落地A-02, 日本落地A-02, 日本落地A-01, 新加坡落地A-01, '美国01 - SS', '美国02 - SS', 香港01-SS, 香港02-SS, 新加坡01-SS, 日本01-SS, 英国SS, 台湾01-SS, 台湾02-SS, 加拿大01, 加拿大02, 韩国01, 韩国02, 香港03-SS, 马来西亚, 马来西亚02, 新加坡02-SS, 日本02-SS, 德国01, 德国02], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：94.48 GB', 套餐到期：长期有效, '导航页二：https://github.com/spsp1111/swebsite', 新加坡落地A-02, 日本落地A-02, 日本落地A-01, 新加坡落地A-01, '美国01 - SS', '美国02 - SS', 香港01-SS, 香港02-SS, 新加坡01-SS, 日本01-SS, 英国SS, 台湾01-SS, 台湾02-SS, 加拿大01, 加拿大02, 韩国01, 韩国02, 香港03-SS, 马来西亚, 马来西亚02, 新加坡02-SS, 日本02-SS, 德国01, 德国02], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: Spcloud, type: select, proxies: [自动选择, 故障转移, '剩余流量：94.43 GB', 套餐到期：长期有效, '导航页二：https://github.com/spsp1111/swebsite', 新加坡落地A-02, 日本落地A-02, 日本落地A-01, 新加坡落地A-01, '美国01 - SS', '美国02 - SS', 香港01-SS, 香港02-SS, 新加坡01-SS, 日本01-SS, 英国SS, 台湾01-SS, 台湾02-SS, 加拿大01, 加拿大02, 韩国01, 韩国02, 香港03-SS, 马来西亚, 马来西亚02, 新加坡02-SS, 日本02-SS, 德国01, 德国02] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：94.43 GB', 套餐到期：长期有效, '导航页二：https://github.com/spsp1111/swebsite', 新加坡落地A-02, 日本落地A-02, 日本落地A-01, 新加坡落地A-01, '美国01 - SS', '美国02 - SS', 香港01-SS, 香港02-SS, 新加坡01-SS, 日本01-SS, 英国SS, 台湾01-SS, 台湾02-SS, 加拿大01, 加拿大02, 韩国01, 韩国02, 香港03-SS, 马来西亚, 马来西亚02, 新加坡02-SS, 日本02-SS, 德国01, 德国02], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：94.43 GB', 套餐到期：长期有效, '导航页二：https://github.com/spsp1111/swebsite', 新加坡落地A-02, 日本落地A-02, 日本落地A-01, 新加坡落地A-01, '美国01 - SS', '美国02 - SS', 香港01-SS, 香港02-SS, 新加坡01-SS, 日本01-SS, 英国SS, 台湾01-SS, 台湾02-SS, 加拿大01, 加拿大02, 韩国01, 韩国02, 香港03-SS, 马来西亚, 马来西亚02, 新加坡02-SS, 日本02-SS, 德国01, 德国02], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,subbb.dashsp.top,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,Spcloud'

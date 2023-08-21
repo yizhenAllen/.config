@@ -110,7 +110,7 @@ opt.expandtab = true           -- Use spaces instead of tabs
 opt.formatoptions = "jcroqlnt" -- tcqj
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
-opt.laststatus = 0
+opt.laststatus = 3
 opt.list = false                   -- Show some invisible characters (tabs...
 opt.pumblend = 10                  -- Popup blend
 opt.pumheight = 10                 -- Maximum number of entries in a popupsopt.scrolloff = 4 -- Lines of context
@@ -133,8 +133,6 @@ end
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
 
-----------------------------------------------
--------------lazyvim configes-----------------
-----------------------------------------------
-
 vim.bo.buflisted = true
+
+vim.g.border_style = "rounded"

@@ -40,7 +40,7 @@ yabai -m rule --add app="^.*$" manage=off
 # yabai -m rule --add app="^Mail$" manage=off
 
 # enable some apps
-yabai -m rule --add app="^Google Chrome$" manage=on
+# yabai -m rule --add app="^Google Chrome$" manage=on
 yabai -m rule --add app="^kitty" manage=on
-yabai -m rule --add app="^Obsidian" manage=on
+# yabai -m rule --add app="^Obsidian" manage=on
 

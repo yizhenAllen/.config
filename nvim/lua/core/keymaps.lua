@@ -37,8 +37,8 @@ keymap.set("n", "<leader>sj", "<C-w>s")  -- horizontally split
 keymap.set("n", "<leader>sw", "<C-w>w")  -- switch window focus
 
 -- navigate between tabs
-keymap.set("n", "<leader>h", "gt")
-keymap.set("n", "<leader>l", "gT")
+keymap.set("n", "<leader>h", "gT")
+keymap.set("n", "<leader>l", "gt")
 
 -- no highlight
 keymap.set("n", "<leader>n", ":nohl<cr>")

@@ -92,6 +92,7 @@ return {
 			window = {
 				documentation = cmp.config.window.bordered(),
 				completion = cmp.config.window.bordered({ border = "rounded" }),
+				winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder",
 			},
 			experimental = {
 				ghost_text = false,

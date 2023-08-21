@@ -46,7 +46,7 @@ return
       { desc = 'Find existing buffers' })
     vim.keymap.set('n', '<leader>/', function()
       require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-        winblend = 10,
+        winblend = 0,
         previewer = false,
       })
     end, { desc = 'Fuzzily search in current buffer' })

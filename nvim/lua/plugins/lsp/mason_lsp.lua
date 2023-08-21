@@ -7,11 +7,13 @@ return {
 		"nvimdev/lspsaga.nvim",
 	},
 	config = function()
+		local lspconfig = require("lspconfig")
 		require("mason").setup()
 		require("mason-lspconfig").setup({
 			ensure_installed = { "lua_ls", "pyright", "bashls" },
 			automatic_installation = false,
 		})
+		require("neodev").setup({})
 		require("lspsaga").setup({
 			finder = {
 				keys = {
@@ -55,6 +57,7 @@ return {
 				frequency = 7,
 			},
 		})
+
 		require("lspconfig.ui.windows").default_options = {
 			border = "rounded",
 		}
@@ -91,6 +94,7 @@ return {
 			keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
 			keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
 			keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+			keymap.set("n", "gs", vim.lsp.buf.signature_help, opts)
 			keymap.set("n", "gD", "<cmd>Lspsaga peek_type_definition<CR>", opts) -- see definition and make edits in window
 			keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 			keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- show documentation for what is under cursor
@@ -111,30 +115,24 @@ return {
 				{ noremap = true, silent = true, buffer = bufnr, desc = "[C]ursor [D]aignostic" }
 			) -- show diagnostics for cursor
 			keymap.set("n", "<leader>o", "<cmd>Lspsaga outline<CR>", opts) -- see outline on right hand side
-
-			-- Create a command `:Format` local to the LSP buffer
-			vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
-				vim.lsp.buf.format()
-			end, { desc = "Format current buffer with LSP" })
 		end
+
+		local capabilities = require("cmp_nvim_lsp").default_capabilities() -- cmp capabilities
 
 		-- not working, do not know why
 		local handlers = {
-			["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
-			["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
+			["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded"}),
+			["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded"}),
 		}
-
-		local lspconfig = require("lspconfig")
-		-- Add additional capabilities supported by nvim-cmp
-		local capabilities = require("cmp_nvim_lsp").default_capabilities()
-		require("neodev").setup({})
 
 		lspconfig.pyright.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			handlers = handlers,
 		})
+
 		lspconfig.lua_ls.setup({
+			handlers = handlers,
 			on_attach = on_attach,
 			capabilities = capabilities,
 			setting = {
@@ -157,9 +155,13 @@ return {
 			},
 		})
 		lspconfig.bashls.setup({
+			handlers = handlers,
 			on_attach = on_attach,
-			capabilities = capabilities,
+			-- capabilities = capabilities,
 		})
+
+		-- diagnostic settings
+		vim.lsp.set_log_level('debug')
 		vim.diagnostic.config({
 			virtual_text = true,
 			underline = false,
@@ -169,7 +171,7 @@ return {
 				focusable = false,
 				style = "minimal",
 				border = "rounded",
-				source = "",
+				source = true,
 				header = "",
 				prefix = "",
 			},
