@@ -53,7 +53,8 @@ keymap.set("n", "<leader>q", ":bd<CR>") -- used to quit a window/pane without sa
 keymap.set("n", "<leader>w", ":w<cr>", { desc = "write" }) -- write current file
 
 -- neotree
-keymap.set("n", "<leader>k", ":Neotree<cr>")
+keymap.set("n", "<leader>k", ":Neotree<cr>") -- use when previewing windows
+-- keymap.set("n", "<leader>e", ":Neotree toggle float dir=%:p:h<cr>")
 keymap.set("n", "<leader>e", ":Neotree toggle float dir=%:p:h reveal reveal_force_cwd<cr>")
 
 -- Resize Windows
@@ -91,7 +92,7 @@ keymap.set({ "n", "v" }, "<leader>x", '"_d^')
 keymap.set("n", "<leader>d", "d^")
 keymap.set("n", "<leader>c", "c^")
 
-vim.keymap.set("n", "<leader>r", "za") -- use <leader>r to fold
+-- vim.keymap.set("n", "<leader>r", "za") -- use <leader>r to fold
 vim.keymap.set("n", "R", "za") -- use <leader>r to fold
 
 -- hold the cursor posi when press J
@@ -99,3 +100,6 @@ keymap.set("n", "J", "mzJ`z")
 
 keymap.set("n", "n", "nzz")
 keymap.set("n", "N", "Nzz")
+
+-- virtual env
+keymap.set("n", "<leader>se", ":PyLspActivateCondaEnv ")

@@ -166,7 +166,7 @@ dns:
     - +.media.dssott.com
     - +.pvp.net
 proxies:
-  - {name: "Traffic: 4.28 GB | 150 GB", server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: "Traffic: 8.38 GB | 150 GB", server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
   - {name: "Expire: 2023-09-18", server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
   - {name: 🇭🇰 香港实验性 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
   - {name: 🇯🇵 日本实验性 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 10002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
@@ -264,7 +264,7 @@ proxy-groups:
       - SG
       - TW
       - US
-      - "Traffic: 4.28 GB | 150 GB"
+      - "Traffic: 8.38 GB | 150 GB"
       - "Expire: 2023-09-18"
       - 🇭🇰 香港实验性 IEPL 中继 1
       - 🇯🇵 日本实验性 IEPL 中继 1

@@ -18,8 +18,8 @@ return {
 		close_on_exit = true,
 		shell = vim.o.shell,
 		float_opts = {
-			width = 130,
-			height = 85,
+			width = 135,
+			height = 40,
 			border = "curved",
 			winblend = 0,
 			highlights = {
@@ -40,7 +40,7 @@ return {
 			jo:toggle()
 		end
 
-		local python = Terminal:new({ cmd = "python", direction = "float", hidden = true })
+		local python = Terminal:new({ cmd = "python", direction = "vertical", size = "30", hidden = true })
 		function _PYTHON()
 			python:toggle()
 		end
@@ -51,9 +51,9 @@ return {
 		vim.keymap.set("n", "<leader>tj", function()
 			vim.cmd("lua _JOSHUTO()")
 		end, { desc = "open joshuto" })
-		vim.keymap.set("n", "<leader>tp", function()
-			vim.cmd("lua _PYTHON()")
-		end, { desc = "open python" })
+		-- vim.keymap.set("n", "<leader>tp", function()
+		-- 	vim.cmd("lua _PYTHON()")
+		-- end, { desc = "open python" })
 		vim.keymap.set("n", "<leader>rp", function()
 			vim.cmd("TermExec cmd='python -u %'")
 		end, { desc = "run python" })
@@ -63,7 +63,35 @@ return {
 
 		vim.keymap.set("t", "ii", [[<C-\><C-n>]], { desc = "move out the terminal" })
 		vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-W>k]], { desc = "move out the terminal" })
-		vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<cr>", { desc = "move out the terminal" })
+		vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-W>h]], { desc = "move out the terminal" })
+		vim.keymap.set("n", "<leader>t", ":ToggleTerm direction=float<cr>", { desc = "toggle float terminal" })
+		-- vim.keymap.set(
+		-- 	"n",
+		-- 	"<leader>tp",
+		-- 	":ToggleTerm direction=vertical size=70<cr>",
+		-- 	{ desc = "toggle float terminal" }
+		-- )
+		vim.keymap.set(
+			"n",
+			"<leader>tc",
+			":ToggleTerm dir=%:p:h direction=float<cr>",
+			{ desc = "float terminal of current dir" }
+		)
 		vim.cmd("hi ToggleTerm1Normal guibg=nil")
+
+		-- vim.keymap.set("n", "<leader>pp", "yip:ToggleTerm<cr><C-\\><C-n>pa<cr><cr>", { desc = "paste to terminal" })
+		-- vim.keymap.set("v", "<leader>pp", "y:ToggleTerm<cr><C-\\><C-n>pa<cr><cr>", { desc = "paste to terminal" })
+		vim.keymap.set(
+			"n",
+			"<leader>p",
+			"yy<C-W>lpa<cr><cr>#########################################<cr><cr><C-\\><C-n><C-W>h",
+			{ desc = "paste to terminal" }
+		)
+		vim.keymap.set(
+			"v",
+			"<leader>p",
+			"y<C-W>lpa<cr><cr>#########################################<cr><cr><C-\\><C-n><C-W>h",
+			{ desc = "paste to terminal" }
+		)
 	end,
 }

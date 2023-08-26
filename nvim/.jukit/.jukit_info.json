@@ -1,0 +1,1 @@
+{"cmd": "\nx = np.linspace(0, 10, 100)\nfig = plt.figure()\nplt.plot(x, np.sin(x), \"-\")\n", "outhist_cell": "oah1rTAnab", "is_md": 1, "cmd_opts": " --cell_id=m3BhL78Xxo -s", "import_complete": 1, "terminal": "tmux"}
