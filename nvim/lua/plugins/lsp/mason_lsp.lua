@@ -10,8 +10,8 @@ return {
 		local lspconfig = require("lspconfig")
 		require("mason").setup()
 		require("mason-lspconfig").setup({
-			ensure_installed = { "lua_ls", "pyright", "bashls" },
-			automatic_installation = false,
+			ensure_installed = { "lua_ls", "pyright", "bashls"},
+			automatic_installation = true,
 		})
 		require("neodev").setup({})
 		require("lspsaga").setup({

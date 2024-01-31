@@ -11,12 +11,11 @@ yabai -m config layout bsp
 # New window spawns to the right if vertical split, or bottom if horizontal split
 yabai -m config window_placement second_child
 
-# Set all padding and gaps to 20pt (default: 0)
-yabai -m config top_padding    0
+# Set all padding and gaps to 20pt (default: 0) yabai -m config top_padding    0
 yabai -m config bottom_padding 0
 yabai -m config left_padding   0
 yabai -m config right_padding  0
-yabai -m config window_gap     2
+yabai -m config window_gap     0
 
 # mouse settings
 yabai -m config mouse_follows_focus off
@@ -42,5 +41,6 @@ yabai -m rule --add app="^.*$" manage=off
 # enable some apps
 # yabai -m rule --add app="^Google Chrome$" manage=on
 yabai -m rule --add app="^kitty" manage=on
+yabai -m rule --add app="^Praat" manage=on
 # yabai -m rule --add app="^Obsidian" manage=on
 

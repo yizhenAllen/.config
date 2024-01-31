@@ -22,7 +22,8 @@ dns:
   ipv6: false
   enhanced-mode: fake-ip
   nameserver:
-    - 114.114.114.114
+    - 119.29.29.29
+    - 223.5.5.5
     - tls://223.5.5.5:853
     - tls://223.6.6.6:853
     - tls://120.53.53.53
@@ -166,95 +167,95 @@ dns:
     - +.media.dssott.com
     - +.pvp.net
 proxies:
-  - {name: "Traffic: 8.38 GB | 150 GB", server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: "Expire: 2023-09-18", server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港实验性 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本实验性 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 10002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡实验性 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 10003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国实验性 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 10004, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港高级 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 12001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港高级 IEPL 中继 2, server: gzdata1.akiyachen.xyz, port: 12002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港高级 IEPL 中继 3, server: gzdata1.akiyachen.xyz, port: 12003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本高级 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 12011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本高级 IEPL 中继 2, server: shdata1.akiyachen.xyz, port: 12012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本高级 IEPL 中继 3, server: shdata1.akiyachen.xyz, port: 12013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 12031, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 2, server: gzdata1.akiyachen.xyz, port: 12032, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 3, server: gzdata1.akiyachen.xyz, port: 12033, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇳 台湾高级 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 12041, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇳 台湾高级 IEPL 中继 2, server: gzdata1.akiyachen.xyz, port: 12042, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇳 台湾高级 IEPL 中继 3, server: gzdata1.akiyachen.xyz, port: 12043, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 12021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 2, server: shdata1.akiyachen.xyz, port: 12022, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 3, server: shdata1.akiyachen.xyz, port: 12023, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 2, server: gzdata1.akiyachen.xyz, port: 11002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 3, server: gzdata1.akiyachen.xyz, port: 11003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 4, server: gzdata1.akiyachen.xyz, port: 11004, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 5, server: gzdata1.akiyachen.xyz, port: 11005, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 6, server: gzdata1.akiyachen.xyz, port: 11006, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 7, server: gzdata1.akiyachen.xyz, port: 11007, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 8, server: gzdata1.akiyachen.xyz, port: 11008, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 2, server: shdata1.akiyachen.xyz, port: 11012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 3, server: shdata1.akiyachen.xyz, port: 11013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 4, server: shdata1.akiyachen.xyz, port: 11014, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 5, server: shdata1.akiyachen.xyz, port: 11015, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 6, server: shdata1.akiyachen.xyz, port: 11016, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 7, server: shdata1.akiyachen.xyz, port: 11017, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 8, server: shdata1.akiyachen.xyz, port: 11018, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11031, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 2, server: gzdata1.akiyachen.xyz, port: 11032, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 3, server: gzdata1.akiyachen.xyz, port: 11033, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 4, server: gzdata1.akiyachen.xyz, port: 11034, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 5, server: gzdata1.akiyachen.xyz, port: 11035, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 6, server: gzdata1.akiyachen.xyz, port: 11036, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 7, server: gzdata1.akiyachen.xyz, port: 11037, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 8, server: gzdata1.akiyachen.xyz, port: 11038, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇳 台湾标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11041, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇳 台湾标准 IEPL 中继 2, server: gzdata1.akiyachen.xyz, port: 11042, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇳 台湾标准 IEPL 中继 3, server: gzdata1.akiyachen.xyz, port: 11043, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 2, server: shdata1.akiyachen.xyz, port: 11022, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 3, server: shdata1.akiyachen.xyz, port: 11023, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 4, server: shdata1.akiyachen.xyz, port: 11024, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 5, server: shdata1.akiyachen.xyz, port: 11025, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 6, server: shdata1.akiyachen.xyz, port: 11026, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 7, server: shdata1.akiyachen.xyz, port: 11027, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 8, server: shdata1.akiyachen.xyz, port: 11028, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇲🇩 摩尔多瓦标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11050, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇺🇦 乌克兰标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11051, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇮🇹 意大利标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11052, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇭🇺 匈牙利标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11053, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇪🇸 西班牙标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11054, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇹🇷 土耳其标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11055, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇩🇪 德国标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11056, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇩🇪 德国标准 IEPL 中继 2, server: bjdata1.akiyachen.xyz, port: 11057, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇬🇧 英国标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11058, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇬🇧 英国标准 IEPL 中继 2, server: bjdata1.akiyachen.xyz, port: 11059, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇳🇱 荷兰标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11060, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇳🇱 荷兰标准 IEPL 中继 2, server: bjdata1.akiyachen.xyz, port: 11061, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇫🇷 法国标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11062, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇫🇷 法国标准 IEPL 中继 2, server: bjdata1.akiyachen.xyz, port: 11063, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇦 加拿大标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11064, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇦 加拿大标准 IEPL 中继 2, server: shdata1.akiyachen.xyz, port: 11065, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇦🇷 阿根廷标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11066, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇧🇷 巴西标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11067, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇨🇱 智利标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11068, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇦🇺 澳大利亚标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11069, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇳🇿 新西兰标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11070, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇰🇷 韩国标准 IEPL 中继 1, server: shdata1.akiyachen.xyz, port: 11071, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇰🇷 韩国标准 IEPL 中继 2, server: shdata1.akiyachen.xyz, port: 11072, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇮🇩 印尼标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11073, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇹🇭 泰国标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11074, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇻🇳 越南标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11075, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇮🇳 印度标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11080, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇵🇰 巴基斯坦标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11081, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇮🇱 以色列标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11082, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇦🇪 阿联酋标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11083, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇵🇭 菲律宾标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11084, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇲🇾 马来西亚标准 IEPL 中继 1, server: gzdata1.akiyachen.xyz, port: 11085, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
-  - {name: 🇪🇬 埃及标准 IEPL 中继 1, server: bjdata1.akiyachen.xyz, port: 11086, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: "Traffic: 35.42 GB | 150 GB", server: gzdata1.fc-streaming.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: "Expire: 2024-01-18", server: gzdata1.fc-streaming.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港实验性 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本实验性 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 10002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡实验性 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 10003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国实验性 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 10004, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港高级 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 12001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港高级 IEPL 中继 2, server: gzdata1.fc-streaming.xyz, port: 12002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港高级 IEPL 中继 3, server: gzdata1.fc-streaming.xyz, port: 12003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本高级 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 12011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本高级 IEPL 中继 2, server: shdata1.fc-streaming.xyz, port: 12012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本高级 IEPL 中继 3, server: shdata1.fc-streaming.xyz, port: 12013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡高级 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 12031, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡高级 IEPL 中继 2, server: gzdata1.fc-streaming.xyz, port: 12032, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡高级 IEPL 中继 3, server: gzdata1.fc-streaming.xyz, port: 12033, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇳 台湾高级 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 12041, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇳 台湾高级 IEPL 中继 2, server: gzdata1.fc-streaming.xyz, port: 12042, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇳 台湾高级 IEPL 中继 3, server: gzdata1.fc-streaming.xyz, port: 12043, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国高级 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 12021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国高级 IEPL 中继 2, server: shdata1.fc-streaming.xyz, port: 12022, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国高级 IEPL 中继 3, server: shdata1.fc-streaming.xyz, port: 12023, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 2, server: gzdata1.fc-streaming.xyz, port: 11002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 3, server: gzdata1.fc-streaming.xyz, port: 11003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 4, server: gzdata1.fc-streaming.xyz, port: 11004, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 5, server: gzdata1.fc-streaming.xyz, port: 11005, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 6, server: gzdata1.fc-streaming.xyz, port: 11006, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 7, server: gzdata1.fc-streaming.xyz, port: 11007, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇰 香港标准 IEPL 中继 8, server: gzdata1.fc-streaming.xyz, port: 11008, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 2, server: shdata1.fc-streaming.xyz, port: 11012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 3, server: shdata1.fc-streaming.xyz, port: 11013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 4, server: shdata1.fc-streaming.xyz, port: 11014, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 5, server: shdata1.fc-streaming.xyz, port: 11015, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 6, server: shdata1.fc-streaming.xyz, port: 11016, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 7, server: shdata1.fc-streaming.xyz, port: 11017, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇯🇵 日本标准 IEPL 中继 8, server: shdata1.fc-streaming.xyz, port: 11018, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11031, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 2, server: gzdata1.fc-streaming.xyz, port: 11032, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 3, server: gzdata1.fc-streaming.xyz, port: 11033, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 4, server: gzdata1.fc-streaming.xyz, port: 11034, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 5, server: gzdata1.fc-streaming.xyz, port: 11035, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 6, server: gzdata1.fc-streaming.xyz, port: 11036, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 7, server: gzdata1.fc-streaming.xyz, port: 11037, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇸🇬 新加坡标准 IEPL 中继 8, server: gzdata1.fc-streaming.xyz, port: 11038, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇳 台湾标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11041, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇳 台湾标准 IEPL 中继 2, server: gzdata1.fc-streaming.xyz, port: 11042, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇳 台湾标准 IEPL 中继 3, server: gzdata1.fc-streaming.xyz, port: 11043, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 2, server: shdata1.fc-streaming.xyz, port: 11022, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 3, server: shdata1.fc-streaming.xyz, port: 11023, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 4, server: shdata1.fc-streaming.xyz, port: 11024, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 5, server: shdata1.fc-streaming.xyz, port: 11025, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 6, server: shdata1.fc-streaming.xyz, port: 11026, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 7, server: shdata1.fc-streaming.xyz, port: 11027, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇸 美国标准 IEPL 中继 8, server: shdata1.fc-streaming.xyz, port: 11028, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇲🇩 摩尔多瓦标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11050, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇺🇦 乌克兰标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11051, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇮🇹 意大利标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11052, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇭🇺 匈牙利标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11053, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇪🇸 西班牙标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11054, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇹🇷 土耳其标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11055, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇩🇪 德国标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11056, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇩🇪 德国标准 IEPL 中继 2, server: bjdata1.fc-streaming.xyz, port: 11057, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇬🇧 英国标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11058, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇬🇧 英国标准 IEPL 中继 2, server: bjdata1.fc-streaming.xyz, port: 11059, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇳🇱 荷兰标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11060, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇳🇱 荷兰标准 IEPL 中继 2, server: bjdata1.fc-streaming.xyz, port: 11061, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇫🇷 法国标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11062, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇫🇷 法国标准 IEPL 中继 2, server: bjdata1.fc-streaming.xyz, port: 11063, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇦 加拿大标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11064, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇦 加拿大标准 IEPL 中继 2, server: shdata1.fc-streaming.xyz, port: 11065, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇦🇷 阿根廷标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11066, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇧🇷 巴西标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11067, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇨🇱 智利标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11068, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇦🇺 澳大利亚标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11069, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇳🇿 新西兰标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11070, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇰🇷 韩国标准 IEPL 中继 1, server: shdata1.fc-streaming.xyz, port: 11071, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇰🇷 韩国标准 IEPL 中继 2, server: shdata1.fc-streaming.xyz, port: 11072, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇮🇩 印尼标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11073, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇹🇭 泰国标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11074, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇻🇳 越南标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11075, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇮🇳 印度标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11080, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇵🇰 巴基斯坦标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11081, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇮🇱 以色列标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11082, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇦🇪 阿联酋标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11083, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇵🇭 菲律宾标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11084, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇲🇾 马来西亚标准 IEPL 中继 1, server: gzdata1.fc-streaming.xyz, port: 11085, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
+  - {name: 🇪🇬 埃及标准 IEPL 中继 1, server: bjdata1.fc-streaming.xyz, port: 11086, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 4a7240136b.douyincdn.com}, udp: true}
 proxy-groups:
   - name: Proxies
     type: select
@@ -264,8 +265,8 @@ proxy-groups:
       - SG
       - TW
       - US
-      - "Traffic: 8.38 GB | 150 GB"
-      - "Expire: 2023-09-18"
+      - "Traffic: 35.42 GB | 150 GB"
+      - "Expire: 2024-01-18"
       - 🇭🇰 香港实验性 IEPL 中继 1
       - 🇯🇵 日本实验性 IEPL 中继 1
       - 🇸🇬 新加坡实验性 IEPL 中继 1
@@ -2398,6 +2399,8 @@ rules:
  - DOMAIN-SUFFIX,auth0.com,OpenAI
  - DOMAIN-SUFFIX,identrust.com,OpenAI
  - DOMAIN-SUFFIX,intercom.io,OpenAI
+ - DOMAIN-SUFFIX,oaistatic.com,OpenAI
+ - DOMAIN-SUFFIX,oaiusercontent.com,OpenAI
  - DOMAIN-SUFFIX,openai.com,OpenAI
  - DOMAIN-SUFFIX,account-paypal.info,PayPal
  - DOMAIN-SUFFIX,account-paypal.net,PayPal
@@ -2649,10 +2652,8 @@ rules:
  - DOMAIN-SUFFIX,aaplimg.com,Apple
  - DOMAIN-SUFFIX,apple.co,Apple
  - DOMAIN-SUFFIX,apple.com,Apple
- - DOMAIN-SUFFIX,apple.com.cn,Apple
  - DOMAIN-SUFFIX,apple-cloudkit.com,Apple
  - DOMAIN-SUFFIX,apple-livephotoskit.com,Apple
- - DOMAIN-SUFFIX,apple-mapkit.com,Apple
  - DOMAIN-SUFFIX,apple.news,Apple
  - DOMAIN-SUFFIX,applemusic.com,Apple
  - DOMAIN-SUFFIX,appstore.com,Apple
@@ -2678,7 +2679,6 @@ rules:
  - IP-CIDR,205.180.175.0/24,Apple,no-resolve
  - IP-CIDR,63.92.224.0/19,Apple,no-resolve
  - IP-CIDR,65.199.22.0/23,Apple,no-resolve
- - PROCESS-NAME,com.apple.geod,Apple
  - PROCESS-NAME,LookupViewService,Apple
  - PROCESS-NAME,storedownloadd,Apple
  - PROCESS-NAME,Music,Apple
@@ -3391,6 +3391,8 @@ rules:
  - DOMAIN,wego.here.com,Proxies
  - DOMAIN-SUFFIX,go.dev,Proxies
  - DOMAIN-SUFFIX,golang.org,Proxies
+ - DOMAIN-SUFFIX,amap.com,DIRECT
+ - DOMAIN-SUFFIX,autonavi.com,DIRECT
  - DOMAIN-SUFFIX,flyert.com,DIRECT
  - DOMAIN-SUFFIX,gandi.net,DIRECT
  - DOMAIN-SUFFIX,snapdrop.net,DIRECT

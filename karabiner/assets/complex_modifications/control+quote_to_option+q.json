@@ -1,0 +1,30 @@
+{
+    "title": "control+quote_to_option+q",
+    "rules": [
+        {
+            "description": "control+quote_to_option+q",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "q",
+                            "modifiers": "option"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

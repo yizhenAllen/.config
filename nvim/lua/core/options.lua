@@ -1,3 +1,5 @@
+vim.cmd [[set viewoptions-=curdir]] --view buffer in the current working dir 
+
 -- when open a file, let nvim right at the position where the lastest change of this file happened.
 vim.cmd [[
   autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -12,7 +14,7 @@ opt.mouse:append("a")
 opt.clipboard:append("unnamedplus")
 
 -- line number
-opt.relativenumber = true
+opt.relativenumber = false
 opt.number = true
 -- indentation
 opt.tabstop = 2
@@ -95,11 +97,6 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = 'menuone,noselect'
 
 ----------------------------------------------
--------------kickstart keymaps---------------
-----------------------------------------------
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
-
-----------------------------------------------
 -------------lazyvim configes-----------------
 ----------------------------------------------
 opt.autowrite = true           -- Enable auto write
@@ -119,7 +116,7 @@ opt.shiftround = true              -- Round indent
 opt.shortmess:append({ W = true, I = true, c = true })
 opt.showmode = false               -- Dont show mode since we have a statusline
 opt.sidescrolloff = 8              -- Columns of context
-opt.spelllang = { "en" }
+opt.spelllang = { "en", "cjk" }
 opt.tabstop = 2                    -- Number of spaces tabs count for
 opt.undolevels = 10000
 opt.wildmode = "longest:full,full" -- Command-line completion mode
@@ -136,3 +133,4 @@ vim.g.markdown_recommended_style = 0
 vim.bo.buflisted = true
 
 vim.g.border_style = "rounded"
+
