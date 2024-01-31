@@ -133,7 +133,8 @@ keymap = [
 
   { keys = ["g", "r"], command = "cd /" },
   { keys = ["g", "c"], command = "cd ~/.config" },
-  { keys = ["g", "d"], command = "cd ~/Downloads" },
+  { keys = ["g", "d"], command = "cd ~/Documents" },
+  { keys = ["g", "m", "c"], command = "cd /Users/yizhen/Documents/ustc-graduate/mycode" },
   { keys = ["g", "e"], command = "cd /etc" },
   { keys = ["g", "h"], command = "cd ~/" },
   { keys = ["?"], command = "help" },
